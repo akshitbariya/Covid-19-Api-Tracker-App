@@ -1,0 +1,64 @@
+.container{
+    padding: 50px;
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    /* margin-top: 10px; */
+    height: 90%;
+    
+}
+.card_top{
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: -15px; */
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+
+}
+.top-bar{
+    /* background-color: aqua; */
+    text-align:center;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 30px;
+
+
+    
+}
+
+.bottom-bar{
+    /* background-color: yellow; */
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+.card{
+    height: 200px;
+    width: 350px;
+    border-radius: 15px;
+    padding: 10px;
+    
+
+}
+
+.card_main{
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 20px;
+    justify-content: space-around;
+    scroll-behavior: smooth;
+
+    /* background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.emeraldgrouppublishing.com%2Fabout%2Four-stance%2Fcovid-19-latest-research-publishing-opportunities&psig=AOvVaw2-gUy3R6Lcet6HLOSiHwVz&ust=1674275769989000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJDlsrep1fwCFQAAAAAdAAAAABAE); */
+    /* background-image: Covidimage; */
+    background-color: white;
+
+}
