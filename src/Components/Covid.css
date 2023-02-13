@@ -1,37 +1,53 @@
 .container{
-    padding: 50px;
+    /* padding: 50px; */
     align-items: center;
     justify-content: center; 
     display: flex;
     flex-direction: column;
     background-color: aqua;
     /* margin-top: 10px; */
-    height: 90%;
+    /* height: 100vh; */
     
 }
 .card_top{
-    background-color: yellowgreen;
+    background-image: linear-gradient( rgb(97, 189, 231), rgb(255, 255, 250));
     display: flex;
     flex-direction: column;
     /* margin-top: -15px; */
-    padding: 10px;
-    height: 100px;
+    /* padding: 10px; */
+    height: 110px;
     width: 100%;
+    animation: animate
+    
+    1.5s linear infinite;
+
+    @keyframes animate {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0.7;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
 
 }
 .top-bar{
-    /* background-color: aqua; */
     text-align:center;
     padding: 10px;
     font-weight: bolder;
-    font-size: 30px;
-
-
+    font-size: 30px;    
+   
+    
     
 }
 
+
 .bottom-bar{
-    /* background-color: yellow; */
     font-weight: bold;
     justify-content: center;
     text-align: center;
@@ -40,25 +56,37 @@
 }
 
 .card{
-    height: 200px;
-    width: 350px;
+    height: 225px;
+    width: 375px;
     border-radius: 15px;
     padding: 10px;
+    transition: transform .2s;
+    background-image: linear-gradient(135deg, rgb(255, 238, 0), rgb(236, 234, 236));
+    opacity: 1.5;
+
     
 
 }
+.card:hover {
+    transform: scale(1.2);
+    background-image: radial-gradient(  rgb(236, 234, 236),rgb(255, 0, 0));
+      
+    
+  }
 
 .card_main{
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-wrap:wrap;
-    gap: 20px;
     justify-content: space-around;
     scroll-behavior: smooth;
-
-    /* background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.emeraldgrouppublishing.com%2Fabout%2Four-stance%2Fcovid-19-latest-research-publishing-opportunities&psig=AOvVaw2-gUy3R6Lcet6HLOSiHwVz&ust=1674275769989000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJDlsrep1fwCFQAAAAAdAAAAABAE); */
-    /* background-image: Covidimage; */
-    background-color: white;
+    background-image: url(./images/covid-cells.jpg);
+    height: 590px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.8;
 
 }
